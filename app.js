@@ -52,7 +52,7 @@ async function update() {
             { $set: { "Marks": marks } }
         );
 
-        console.log(result.modifiedCount > 0 ? "Record Updated" : "No matching record found to update.");
+        console.log(result.modifiedCount > 0 ? "Record Updated Successfully" : "No matching record found to update.");
     } finally {
         await client.close();
     }
